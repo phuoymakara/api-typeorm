@@ -1,0 +1,32 @@
+# ------------------------------------------------------
+#  (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Query {
+  hello: String!
+}
+
+type Users{
+  id: Int!
+
+  username: String
+
+  email: String!
+
+  avatar: String
+
+  gender: String
+
+  isVerified: Boolean
+
+  isLocked: Boolean
+
+  reason: String
+
+  isActive: Boolean
+
+}
+
+type Query{
+  getUsers: [Users]
+}
