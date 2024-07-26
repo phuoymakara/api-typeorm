@@ -29,4 +29,6 @@ type Users{
 
 type Query{
   getUsers: [Users]
+  getHello: String
 }
+
