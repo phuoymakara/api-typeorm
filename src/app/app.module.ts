@@ -22,13 +22,13 @@ import { AuthModule } from 'src/modules/auth/auth.module';
       driver: ApolloDriver,
       useClass: GraphQLConfigService
     }),
-    TypeOrmModule.forRootAsync({
-      useClass: TypeOrmService,
-      dataSourceFactory: async (option) => {
-        const datasource = await new DataSource(option).initialize();
-        return datasource;
-      }
-    }),
+    // TypeOrmModule.forRootAsync({
+    //   useClass: TypeOrmService,
+    //   dataSourceFactory: async (option) => {
+    //     const datasource = await new DataSource(option).initialize();
+    //     return datasource;
+    //   }
+    // }),
     AuthModule
   ],
   controllers: [AppController],
